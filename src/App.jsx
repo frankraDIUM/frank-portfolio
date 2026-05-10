@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 const NAV_LINKS = ["About", "Experience", "Skills", "Projects", "Contact"];
 
 const projects = [
+  // ── GeoAI ──────────────────────────────────────────────────────────────────
   {
     category: "GeoAI",
     index: "01",
@@ -37,8 +38,31 @@ const projects = [
     accent: "#00D4B4",
   },
   {
-    category: "Spatial Data Science",
+    category: "GeoAI",
     index: "04",
+    title: "Accra Urban Solar Suitability & Investment Mapping",
+    subtitle: "Geospatial AI & Economic Modelling",
+    description:
+      "Combines Geospatial AI and economic modelling to assess rooftop and open-land solar potential across Accra, mapping suitability scores and investment viability to support renewable energy planning and urban development.",
+    highlights: ["Solar suitability scoring", "Economic modelling", "Renewable energy GeoAI"],
+    github: "https://github.com/frankraDIUM/Accra-Urban-Solar-Suitability-Investment-Mapping-Using-Geospatial-AI-and-Economic-Modeling",
+    accent: "#00D4B4",
+  },
+  {
+    category: "GeoAI",
+    index: "05",
+    title: "Amazon Deforestation Monitoring: Rondônia Hotspot",
+    subtitle: "Sentinel-2 NDVI Change Detection — ~300,000 km²",
+    description:
+      "Monitors vegetation change and detects potential deforestation using Sentinel-2 imagery and NDVI difference over a ~300,000 km² sub-region in the Brazilian Amazon (southern Rondônia / northern Mato Grosso).",
+    highlights: ["NDVI change detection", "Sentinel-2 imagery", "Amazon sub-region analysis"],
+    github: "https://github.com/frankraDIUM/Amazon-Deforestation-Monitoring-Sub-Region-Analysis-Rondonia-Hotspot-",
+    accent: "#00D4B4",
+  },
+  // ── Spatial Data Science ───────────────────────────────────────────────────
+  {
+    category: "Spatial Data Science",
+    index: "06",
     title: "Transit Accessibility Analysis — New York City",
     subtitle: "Walking Isochrones & Spatial Equity",
     description:
@@ -49,7 +73,7 @@ const projects = [
   },
   {
     category: "Spatial Data Science",
-    index: "05",
+    index: "07",
     title: "Automated GIS-ML System for Water Infrastructure Risk in Kenya",
     subtitle: "End-to-End Risk Pipeline — Nairobi Focus",
     description:
@@ -59,8 +83,20 @@ const projects = [
     accent: "#7B61FF",
   },
   {
+    category: "Spatial Data Science",
+    index: "08",
+    title: "Spatial Optimization of Telecom Network Coverage — Greater Accra",
+    subtitle: "Coverage Gap Analysis & Tower Siting",
+    description:
+      "Develops a geospatial framework to identify coverage gaps, quantify underserved population, and recommend optimal new cell tower locations in Greater Accra, Ghana.",
+    highlights: ["Coverage gap analysis", "Population demand modelling", "Optimal tower siting"],
+    github: "https://github.com/frankraDIUM/Spatial-Optimization-of-Telecom-Network-Coverage-and-Customer-Demand-in-Greater-Accra",
+    accent: "#7B61FF",
+  },
+  // ── Machine Learning ───────────────────────────────────────────────────────
+  {
     category: "Machine Learning",
-    index: "06",
+    index: "09",
     title: "FraudShield AI",
     subtitle: "Real-Time Financial Fraud Detection",
     description:
@@ -70,8 +106,8 @@ const projects = [
     accent: "#FF6B6B",
   },
   {
-    category: "Data Science",
-    index: "07",
+    category: "Machine Learning",
+    index: "10",
     title: "Telco Customer Churn: Predictive Analysis & Explainable AI",
     subtitle: "SHAP-Driven Churn Prediction",
     description:
@@ -81,8 +117,31 @@ const projects = [
     accent: "#FF6B6B",
   },
   {
+    category: "Machine Learning",
+    index: "11",
+    title: "Stock Market Clustering — ML",
+    subtitle: "Industry Pattern Discovery, 2010–2015",
+    description:
+      "Analyzes the movement patterns of 60 major companies from 2010–2015 to identify hidden industry relationships and cluster structures using unsupervised machine learning.",
+    highlights: ["Unsupervised clustering", "60 companies", "Industry relationship mapping"],
+    github: "https://github.com/frankraDIUM/Stock-Market-Clustering-ML",
+    accent: "#FF6B6B",
+  },
+  // ── Data Analytics ─────────────────────────────────────────────────────────
+  {
     category: "Data Analytics",
-    index: "08",
+    index: "12",
+    title: "Sentiment Analysis of Flood Risk Perception in Greater Accra",
+    subtitle: "X/Twitter NLP — Public Emotional Tone",
+    description:
+      "Performs sentiment analysis on X/Twitter data to gauge public perception and emotional tone regarding flood risk in Ghana's Greater Accra Region, surfacing community-level risk awareness patterns.",
+    highlights: ["NLP / sentiment analysis", "X/Twitter data", "Flood risk perception"],
+    github: "https://github.com/frankraDIUM/Sentiment-Analysis-X-Twitter-data",
+    accent: "#F59E0B",
+  },
+  {
+    category: "Data Analytics",
+    index: "13",
     title: "Supply Chain & Inventory Optimization Dashboard",
     subtitle: "Power BI Operational Intelligence",
     description:
@@ -93,9 +152,9 @@ const projects = [
   },
   {
     category: "Data Analytics",
-    index: "09",
+    index: "14",
     title: "Online Retail Sales Performance Dashboard",
-    subtitle: "Executive Business Intelligence",
+    subtitle: "UCI Online Retail II Dataset",
     description:
       "Executive-level analytics dashboard using the UCI Online Retail II dataset to uncover operational and customer insights through advanced BI techniques.",
     highlights: ["Executive dashboarding", "Customer analytics", "Business intelligence"],
@@ -570,7 +629,7 @@ export default function FrankPortfolio() {
         </div>
 
         <a
-          href="mailto:frankgasiamah@gmail.com"
+          href="mailto:frankradium@gmail.com"
           style={{
             fontSize: "12px",
             fontWeight: 500,
@@ -708,7 +767,7 @@ export default function FrankPortfolio() {
               </p>
 
               <div className="hero-animate-4" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-                <a href="mailto:frankgasiamah@gmail.com" className="cta-btn-primary">
+                <a href="mailto:frankradium@gmail.com" className="cta-btn-primary">
                   Get in Touch
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -735,7 +794,7 @@ export default function FrankPortfolio() {
               }}>
                 {[
                   { n: "5+", label: "Years Experience" },
-                  { n: "20+", label: "Major Projects" },
+                  { n: "14+", label: "Major Projects" },
                   { n: "M.Sc.", label: "Cartography & GIS" },
                 ].map((stat, i) => (
                   <div key={i} style={{
@@ -1212,8 +1271,8 @@ export default function FrankPortfolio() {
             </p>
 
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
-              <a href="mailto:frankgasiamah@gmail.com" className="cta-btn-primary">
-                frankgasiamah@gmail.com
+              <a href="mailto:frankradium@gmail.com" className="cta-btn-primary">
+                frankradium@gmail.com
               </a>
               <a href="https://github.com/frankraDIUM" target="_blank" rel="noopener noreferrer" className="cta-btn-secondary">
                 Explore Projects
@@ -1240,7 +1299,7 @@ export default function FrankPortfolio() {
           {[
             { label: "GitHub", href: "https://github.com/frankraDIUM" },
             { label: "LinkedIn", href: "https://www.linkedin.com/in/frankgasiamah/" },
-            { label: "Email", href: "mailto:frankgasiamah@gmail.com" },
+            { label: "Email", href: "mailto:frankradium@gmail.com" },
           ].map(({ label, href }) => (
             <a
               key={label}
